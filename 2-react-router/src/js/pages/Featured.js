@@ -1,23 +1,38 @@
 import React from "react";
 
+<<<<<<< HEAD
 import Article from "../components/Articles";
+=======
+import Article from "../components/Article";
+>>>>>>> upstream/master
 
 export default class Featured extends React.Component {
   render() {
     const Articles = [
       "Some Article",
-      "An other Article",
-      "This is Article",
-      "Hello Article",
-    ].map((title,i)=><Article key={i} title={title}/>);
+      "Some Other Article",
+      "Yet Another Article",
+      "Still More",
+      "Some Article",
+      "Some Other Article",
+      "Yet Another Article",
+      "Still More",
+      "Some Article",
+      "Some Other Article",
+      "Yet Another Article",
+      "Still More",
+    ].map((title, i) => <Article key={i} title={title}/> );
+
     const adText = [
-      "ad Sport #1",
-      "ad Sport #2",
-      "ad Sport #3",
-      "ad Sport #4",
-      "ad Sport #5"
+      "Ad spot #1",
+      "Ad spot #2",
+      "Ad spot #3",
+      "Ad spot #4",
+      "Ad spot #5",
     ];
-    const randomAd = adText[Math.round(Math.random()*(adText.length-1))];
+
+    const randomAd = adText[Math.round( Math.random() * (adText.length-1) )];
+    console.log("featured");
     return (
       <div>
         <div class="row">
